@@ -23,6 +23,8 @@ body {
     background-position-y: 100%;
     display: block;
     margin: 0px;
+    position: relative;
+    background-size: cover;
 
 
 }
@@ -73,7 +75,7 @@ a {
 }
 .main_container {
     position: relative;
-    height: 100vh;
+    margin-bottom: 20%;
 }
 .main_body {
     background-color: lightblue;
@@ -91,7 +93,7 @@ footer {
     background: gray;
     padding-top: 30px;
     width: 100%;
-    position: relative;
+    position: absolute;
     border-top: 7px solid #4aaaa5;
 }
 .main_footer {
@@ -104,7 +106,7 @@ footer {
 .body2 {
     background-color: #ffffff;
     width: 880px;
-    height: 600px;
+    height: 630px;
     padding-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -118,19 +120,29 @@ footer {
     position: relative;
     color: darkgray;
     margin-top: 2em;
+    
 }
-
+::placeholder{
+    color: darkgray;
+    opacity: 3;
+}
 .text {
     width: 100%;
+    height: 40px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    font-size: 16px;
     padding: 12px 20px;
-    margin: 8px 0px;
     box-sizing: border-box;
+    resize: none;
 }
-.text2 {
+.text2, textarea{
     width: 100%;
-    padding: 70px 20px;
     margin: 8px 0px;
     box-sizing: border-box;
+    padding: 12px 20px;
+    resize: none;
+    font-size: 15px;
 }
 input[type=submit] {
     background-color: #4aaaa5;
@@ -163,7 +175,7 @@ input[type=submit] {
 .body3 {
     background-color: #ffffff;
     width: 880px;
-    height: 930px;
+    height: 900px;
     padding-top: 25px;
     margin-left: auto;
     margin-right: auto;
@@ -216,6 +228,7 @@ h3 {
 .trivia{
     padding-top: 30px;
     position: relative;
+    grid-column-start: 1;
 }
 .trivia_head{
     width: 250px;
@@ -230,6 +243,8 @@ h3 {
 .rock{
     padding-top: 30px;
     position: relative;
+    padding-bottom: 40px;
+    grid-column-start: 1;
 }
 .rock_head{
     width: 250px;
@@ -244,6 +259,7 @@ h3 {
 .rutger{
     padding-top: 30px;
     position: relative;
+    grid-column-start: 2;
     
 }
 .rutger_head{
